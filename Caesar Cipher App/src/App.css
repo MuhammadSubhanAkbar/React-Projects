@@ -1,0 +1,100 @@
+/* General app container */
+.app {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111827; /* dark gray */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Card container */
+.card {
+    background-color: #1f2937; /* darker gray */
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #818cf8; /* indigo */
+    margin-bottom: 1.5rem;
+}
+
+/* Form */
+.form {
+    margin-bottom: 1rem;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    background-color: #374151;
+    color: white;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #6366f1; /* focus indigo */
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-encrypt {
+    background-color: #4f46e5; /* indigo */
+    color: white;
+}
+
+.btn-encrypt:hover {
+    background-color: #4338ca;
+}
+
+.btn-decrypt {
+    background-color: #16a34a; /* green */
+    color: white;
+}
+
+.btn-decrypt:hover {
+    background-color: #15803d;
+}
+
+/* Output */
+.output-box {
+    background-color: #374151;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.output-title {
+    color: #a5b4fc; /* light indigo */
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.output-text {
+    color: #f9fafb;
+    word-wrap: break-word;
+}
