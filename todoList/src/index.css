@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+@import "tailwindcss";
+
+.btn {
+    @apply font-medium rounded-lg text-sm px-5 py-2.5 text-center transition-all duration-200 ease-in-out;
+}
+
+.btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 text-white m-5;
+}
+
+.btn-secondary {
+    @apply bg-gray-600 hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 text-white m-5;
+}
+
+.btn-success {
+    @apply bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-300 text-white m-5;
+}
+
+.btn-danger {
+    @apply bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-red-300 text-white m-5;
+}
+
+.btn-circle{
+    @apply w-16 h-16 rounded-full  text-white  items-center justify-center text-sm font-bold;
+}
+
+.container{
+    @apply flex flex-col items-center justify-center px-5 py-10 text-3xl font-bold ;
+}
+
+/* Base input style */
+.form-input {
+    @apply border rounded-lg px-4 py-3 transition-all duration-200 ease-in-out
+    focus:outline-none focus:ring-2 focus:shadow-lg w-full
+    placeholder:text-gray-400 text-base;
+}
+
+/* Primary variant */
+.form-input-primary {
+    @apply border-gray-300 bg-white focus:border-blue-500 focus:ring-blue-500
+    hover:border-gray-400;
+}
+
+/* Secondary variant */
+.form-input-secondary {
+    @apply border-gray-200 bg-gray-50 focus:border-purple-500 focus:ring-purple-500
+    hover:border-gray-300;
+}
+
+/* Error state */
+.form-input-error {
+    @apply border-red-300 bg-red-50 focus:border-red-500 focus:ring-red-500
+    text-red-900;
+}
+
+/* Success state */
+.form-input-success {
+    @apply border-green-300 bg-green-50 focus:border-green-500 focus:ring-green-500;
+}
