@@ -1,21 +1,21 @@
-import './Sidebar.css';
-import Categories from "./catogory/Catogory.jsx";
-import Price from "./Price/Price.jsx";
-import Colors from "./colors/Colors.jsx";
+import Category from "./catogory/Catogory.jsx";
+import Price from "./Price/Price";
+import Colors from "./colors/Colors";
+import "./Sidebar.css";
 
-function Sidebar() {
+const Sidebar = ({ handleChange }) => {
     return (
         <>
             <section className="sidebar">
                 <div className="logo-container">
                     <h1>🛒</h1>
                 </div>
-                <Categories />
-                <Price/>
-                <Colors/>
+                <Category handleChange={handleChange} />
+                <Price handleChange={handleChange} />
+                <Colors handleChange={handleChange} />
             </section>
         </>
-    )
-}
+    );
+};
 
 export default Sidebar;
