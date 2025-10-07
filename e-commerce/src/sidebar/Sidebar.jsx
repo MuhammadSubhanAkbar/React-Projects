@@ -8,11 +8,8 @@ function Sidebar() {
         <>
             <section className="sidebar">
                 <div className="logo-container">
-                    <h1>
-                        🛒
-                    </h1>
+                    <h1>🛒</h1>
                 </div>
-
                 <Categories />
                 <Price/>
                 <Colors/>
