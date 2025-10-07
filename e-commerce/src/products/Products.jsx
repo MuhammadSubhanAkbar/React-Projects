@@ -5,37 +5,33 @@ import { FaBagShopping } from "react-icons/fa6";
 function Products() {
     return (
         <>
-            <section className="card container">
-                <section className="card">
+            <section className="card-container">
+                <div className="card">
                     <img src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg" alt="shoe"/>
                     <div className="card-detail">
-                        <h3 className='card-title'>
-                            <section className="card-reviews">
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
+                        <h3 className="card-title">Nike Running Shoes</h3>
 
-                                <span className="total-reviews">4</span>
-                            </section>
+                        <div className="card-reviews">
+                            <FaStar className="rating-star" />
+                            <FaStar className="rating-star" />
+                            <FaStar className="rating-star" />
+                            <FaStar className="rating-star" />
+                            <span className="total-reviews">(4)</span>
+                        </div>
 
-                            <section className="card-price">
-                                <div className="price">
-                                    <del>
-                                       $ 300
-                                    </del>
-                                    200
-
-                                    <div className="bag-icon">
-                                        <FaBagShopping />
-                                    </div>
-                                </div>
-
-
-                            </section>
-                        </h3>
+                        <div className="card-price">
+                            <div className="price">
+                                <del>$300</del>
+                                $200
+                            </div>
+                            <div className="bag-icon">
+                                <FaBagShopping />
+                            </div>
+                        </div>
                     </div>
-                </section>
+                </div>
+
+                {/* You can add more cards here */}
             </section>
         </>
     )
